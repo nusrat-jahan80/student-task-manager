@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6f4;
+    color: #26352f;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #287c68;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #77847e;
+    font-size: 15px;
+}
+
+.task-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.task-section h2 {
+    margin-bottom: 22px;
+}
+
+#task-form {
+    display: flex;
+    gap: 10px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #dce5e0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+#task-input:focus {
+    border-color: #287c68;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 17px;
+    background: #287c68;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:hover {
+    background: #1d6655;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    margin: 22px 0;
+}
+
+.filters button {
+    background: #e8f3ef;
+    color: #287c68;
+}
+
+.filters button:hover {
+    background: #cfe6dc;
+}
+
+#task-list {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #e8edeb;
+    border-radius: 8px;
+}
+
+.task-item input {
+    accent-color: #287c68;
+}
+
+.task-name {
+    flex: 1;
+    font-size: 14px;
+}
+
+.completed .task-name {
+    text-decoration: line-through;
+    color: #9ba7a1;
+}
+
+.delete-btn {
+    background: #f8e9e8;
+    color: #a44f4b;
+}
+
+.delete-btn:hover {
+    background: #f0d6d4;
+}
+
+.empty-message {
+    text-align: center;
+    color: #9ba7a1;
+    padding: 20px;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #9ba7a1;
+    font-size: 12px;
+}
+
+@media (max-width: 500px) {
+    #task-form {
+        flex-direction: column;
+    }
+
+    .task-section {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
